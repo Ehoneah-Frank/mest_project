@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: #007BFF;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../images/hero1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+
+.banner-content {
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.banner-content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner-content p {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+.banner-features {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.feature {
+    background-color: #007BFF;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    width: 200px;
+}
+
+.feature .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.feature h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.feature p {
+    font-size: 14px;
+}
+
+
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.about-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: #000;
+}
+
+.about-intro {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+.we_serve {
+    /* display: flex; */
+
+    /* justify-content: space-around; */
+    /* width: 50%;
+    gap: 2rem;
+    margin-left: 70px; */
+
+    margin: 2rem 6rem;
+    /* display: flex; */
+    /* gap: 5rem; */
+
+}
+
+.we_serve_img {
+
+    display: flex;
+    /* width: 50%; */
+    gap: 3rem;
+    /* width: 80%;
+    height: 50%; */
+
+
+}
+
+.image {
+    width: 50%;
+    line-height: 30px
+
+
+}
+
+.image img {
+
+    width: 100%;
+}
+
+
+
+
+.we_serve h3 {
+
+    font-size: 35px;
+}
+
+
+.we_serve P {
+
+    font-size: 20px;
+}
+
+
+.provide {
+    /* font-size: 14px; */
+    /* margin-top: 2rem; */
+    text-align: center;
+    line-height: 0;
+    margin-top: 5rem;
+
+}
+
+.provide p{
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+
+.image a{
+
+    text-decoration: none;
+    color: black;
+}
+
+.view_more{
+
+    text-align: center;
+    /* color: white;
+    background-color: orange;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px; */
+    
+}
