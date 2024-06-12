@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     color: #000;
     background-color: #fff;
@@ -54,7 +55,7 @@ body {
 }
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../images/hero1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.884)), url('../images/hero1.jpg') no-repeat center center/cover;
     height: 100vh;
     color: #fff;
     display: flex;
@@ -120,7 +121,7 @@ body {
 .about-section h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 36px;
-    color: #000;
+    color: #000080;
 }
 
 .about-intro {
@@ -157,7 +158,7 @@ body {
 .cta-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #000080;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -165,7 +166,7 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #0056b3;
+    background-color: #000080;
 }
 
 
@@ -239,6 +240,10 @@ body {
     line-height: 1.5rem;
 }
 
+.provide h3{
+    color: #000080;
+}
+
 
 .image a{
 
@@ -256,4 +261,500 @@ body {
     border: none;
     border-radius: 20px; */
     
+}
+
+.online-giving-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f0f8ff;
+    color: #000;
+}
+
+.online-giving-content {
+    max-width: 60%;
+    padding: 60px 20px;
+}
+
+.online-giving-content h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: #000080;
+}
+
+.online-giving-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.online-giving-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* styling the meet our sheperds */
+
+.community-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000080; /* Navy Blue */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro-text {
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.community-section {
+    padding: 20px;
+    background-color: white; /* Alice Blue */
+}
+
+.shepherds {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.shepherd {
+    background-color: white;
+    border: 1px solid #000080;
+    border-radius: 7px;
+    width: 23%;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shepherd img {
+    width: 50%;
+    border-bottom: 1px solid #000080; /* Navy Blue */
+    padding-bottom: 10px;
+}
+
+.shepherd h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000080; /* Navy Blue */
+    margin: 10px 0;
+}
+
+.shepherd .title {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.shepherd .description {
+    font-family: Arial, sans-serif;
+    color: black;
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #000080; /* Navy Blue */
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-icons a:hover {
+    color: #ff4500; /* Orange Red */
+}
+
+
+
+/* Gallery and invitation */
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000080; /* Navy Blue */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro-text {
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.gallery-section {
+    padding: 20px;
+    background-color: #f0f8ff; /* Alice Blue */
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.load-more-btn {
+    display: block;
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.load-more-btn:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+.invitation-section {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.info-btn {
+    background-color: #800080; /* Purple */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.info-btn:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+
+
+
+
+
+
+
+/* Styling te News section */
+
+
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000080; /* Navy Blue */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro-text {
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.news-section {
+    padding: 20px;
+    background-color: #f0f8ff; /* Alice Blue */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.ministries, .latest-news {
+    width: 48%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tablinks {
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    flex: 1;
+    text-align: center;
+}
+
+.tablinks.active, .tablinks:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+.tabcontent {
+    display: none;
+    text-align: center;
+}
+
+.tabcontent img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.learn-more-btn {
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.learn-more-btn:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+.latest-news h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000080; /* Navy Blue */
+    margin-top: 0;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.date {
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.sermon-section {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.sermon-video {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.sermon-video img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
+/* Styling the contact section */
+.contact-section {
+    padding: 50px 0;
+}
+
+.contact-section h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    font-size: 2em;
+    text-align: center;
+}
+
+.contact-section p {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form .form-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-field input,
+.contact-form .form-field textarea {
+    width: 48%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .form-field textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.contact-form .submit-button {
+    text-align: center;
+}
+
+.contact-form .submit-button button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .submit-button button:hover {
+    background-color: darkblue;
+}
+
+
+
+/* Styling the footer */
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .column {
+    width: 30%;
+}
+
+.footer h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+    font-family: Arial, sans-serif;
+    color: black;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .newsletter input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer .newsletter button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer .newsletter button:hover {
+    background-color: darkblue;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    color: black;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+    color: blue;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e9ecef;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
 }
