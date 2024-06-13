@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     color: #000;
     background-color: #fff;
+    overflow-x: 0;
 }
 
 .header {
@@ -54,108 +55,170 @@ body {
     color: #007BFF;
 }
 
+
+
+/* styling the header section */
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.884)), url('../images/hero1.jpg') no-repeat center center/cover;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 50px;
+    height: 100vh; /* Full viewport height */
+    color: #fff; /* Text color white */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column direction for flex items */
+    justify-content: center; /* Center vertically */
+    align-items: flex-end; /* Align items to the right */
+    position: relative; /* Position relative for absolute positioning of slides */
+    overflow: hidden; /* Hide overflow */
+    padding-right: 50px; /* Right padding */
+    
 }
 
+/* Slideshow container */
+.banner-slideshow {
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Top edge */
+    left: 0; /* Left edge */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1; /* Behind the content */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column direction for flex items */
+    filter: brightness(40%);
+}
+
+/* Each slide */
+.slide {
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    opacity: 0; /* Initially invisible */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Top edge */
+    left: 0; /* Left edge */
+    transition: opacity 1s ease-in-out; /* Smooth opacity transition */
+}
+
+/* Active slide */
+.slide.active {
+    opacity: 1; /* Fully visible */
+}
+
+/* Content styling */
 .banner-content {
-    text-align: right;
-    margin-bottom: 50px;
+    text-align: right; /* Right-align text */
+    margin-bottom: 50px; /* Bottom margin */
 }
 
 .banner-content h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
-    margin: 0;
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    font-size: 48px; /* Font size */
+    margin: 0; /* No margin */
 }
 
 .banner-content p {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    margin: 10px 0 0;
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 24px; /* Font size */
+    margin: 10px 0 0; /* Margin */
 }
 
+/* Features styling */
 .banner-features {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
+    display: flex; /* Flexbox layout */
+    justify-content: flex-end; /* Align items to the right */
+    gap: 30px; /* Space between items */
 }
 
 .feature {
-    background-color: #007BFF;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    color: #fff;
-    width: 200px;
+    background-color: #007BFF; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+    color: #fff; /* Text color white */
+    width: 200px; /* Fixed width */
 }
 
 .feature .icon {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px; /* Bottom margin */
 }
 
 .feature h2 {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 18px; /* Font size */
+    margin: 10px 0; /* Margin */
 }
 
 .feature p {
-    font-size: 14px;
+    font-size: 14px; /* Font size */
 }
 
 
-.about-section {
+
+/* styling the about content */
+/* .about-section {
     padding: 60px 20px;
     text-align: center;
     background-color: #f0f8ff;
-}
+} */
 
-.about-section h2 {
+/* .about-section h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 36px;
     color: #000080;
-}
+} */
 
-.about-intro {
+/* .about-intro {
     font-size: 18px;
     color: #333;
     margin-bottom: 40px;
-}
+} */
 
-.about-content {
+/* .about-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-}
+} */
 
-.about-content img {
+/* .about-content img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
+} */
 
-.about-text {
+/* .about-text {
     max-width: 600px;
     text-align: left;
-}
+} */
 
-.about-text p {
+/* .about-text p {
     font-size: 16px;
     color: #333;
     margin-bottom: 20px;
-}
+} */
 
 .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000080;
+    color: #fff;
+    text-decoration: none;
+    /* border-radius: 5px; */
+    font-weight: bold;
+    border: none;
+}
+
+.cta-btn:hover {
+    background-color: #007BFF;
+}
+.cta-btn a{
+    color: white;
+}
+
+#btn-btn a{
+    color: white;
+}
+
+.cta-btn-btn{
     display: inline-block;
     padding: 10px 20px;
     background-color: #000080;
@@ -165,14 +228,12 @@ body {
     font-weight: bold;
 }
 
-.cta-btn:hover {
-    background-color: #000080;
+.cta-btn-btn:hover{
+    background-color: #007BFF;
 }
 
 
-
-
-
+/* styling the upcoming event content */
 
 .we_serve {
     /* display: flex; */
@@ -195,13 +256,14 @@ body {
     gap: 3rem;
     /* width: 80%;
     height: 50%; */
+    margin-top: 5rem;
 
 
 }
 
 .image {
     width: 50%;
-    line-height: 30px
+    line-height: 10px
 
 
 }
@@ -211,13 +273,16 @@ body {
     width: 100%;
 }
 
+.image h4{
+    font-size: 20px;
+    font-weight: 20rem;
+}
 
 
-
-.we_serve h3 {
+/* .we_serve h3 {
 
     font-size: 35px;
-}
+} */
 
 
 .we_serve P {
@@ -263,33 +328,35 @@ body {
     
 }
 
-.online-giving-section {
+
+/* styling the online giving section */
+/* .online-giving-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px 20px;
     background-color: #f0f8ff;
     color: #000;
-}
+} */
 
-.online-giving-content {
+/* .online-giving-content {
     max-width: 60%;
     padding: 60px 20px;
-}
+} */
 
-.online-giving-content h2 {
+/* .online-giving-content h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 36px;
     color: #000080;
-}
+} */
 
-.online-giving-content p {
+/* .online-giving-content p {
     font-size: 16px;
     color: #333;
     margin-bottom: 20px;
-}
+} */
 
-.cta-btn {
+/* .cta-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #000080;
@@ -297,17 +364,19 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-}
+} */
 
-.cta-btn:hover {
+/* .cta-btn:hover {
     background-color: #0056b3;
-}
+} */
 
-.online-giving-image img {
+/* .online-giving-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
+} */
+
+
 
 
 /* styling the meet our sheperds */
@@ -457,24 +526,25 @@ h2 {
     background-color: #1e90ff; /* Dodger Blue */
 }
 
-.invitation-section {
+/* styling the invitation section */
+/* .invitation-section {
     padding: 20px;
     background-color: white;
     text-align: center;
-}
+} */
 
-.info-btn {
+/* .info-btn {
     background-color: #800080; /* Purple */
-    color: white;
+    /* color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-family: Arial, sans-serif;
-}
+} */ */
 
-.info-btn:hover {
+/* .info-btn:hover {
     background-color: #1e90ff; /* Dodger Blue */
-}
+/* } */ */
 
 
 
@@ -584,86 +654,87 @@ h2 {
     flex: 1;
 }
 
-.sermon-section {
+/* styling the sermon section */
+/* .sermon-section {
     padding: 20px;
     background-color: white;
     text-align: center;
-}
+} */
 
-.sermon-video {
+/* .sermon-video {
     position: relative;
     display: inline-block;
     margin-top: 20px;
-}
+} */
 
-.sermon-video img {
+/* .sermon-video img {
     width: 100%;
     border-radius: 5px;
-}
+} */
 
-.play-button {
+/* .play-button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
     color: white;
-}
+} */
 
 
 
 
 /* Styling the contact section */
-.contact-section {
+/* .contact-section {
     padding: 50px 0;
-}
+} */
 
-.contact-section h1 {
+/* .contact-section h1 {
     font-family: 'Times New Roman', Times, serif;
     color: blue;
     font-size: 2em;
     text-align: center;
-}
+} */
 
-.contact-section p {
+/* .contact-section p {
     font-family: Arial, sans-serif;
     color: black;
     font-size: 1em;
     margin-bottom: 30px;
     text-align: center;
-}
+} */
 
-.contact-form {
+/* .contact-form {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-}
+} */
 
-.contact-form .form-field {
+/* .contact-form .form-field {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-}
+} */
 
-.contact-form .form-field input,
-.contact-form .form-field textarea {
+/* .contact-form .form-field input,
+/* .contact-form .form-field textarea {
     width: 48%;
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+} */ */
 
-.contact-form .form-field textarea {
+/* .contact-form .form-field textarea {
     width: 100%;
     height: 100px;
-}
+} */
 
-.contact-form .submit-button {
+/* .contact-form .submit-button {
     text-align: center;
-}
+} */
 
-.contact-form .submit-button button {
+/* .contact-form .submit-button button {
     background-color: blue;
     color: white;
     border: none;
@@ -671,11 +742,11 @@ h2 {
     font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
-.contact-form .submit-button button:hover {
-    background-color: darkblue;
-}
+/* .contact-form .submit-button button:hover {
+    background-color: #007BFF;
+} */
 
 
 
@@ -685,6 +756,8 @@ h2 {
     background-color: #f8f9fa;
     padding: 20px 0;
     font-family: Arial, sans-serif;
+    
+
 }
 
 .footer .container {
@@ -693,6 +766,7 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-top: 1.5rem;
 }
 
 .footer .column {
@@ -748,7 +822,7 @@ h2 {
 }
 
 .footer .social-icons a:hover {
-    color: blue;
+    color: #007BFF;
 }
 
 .footer .copyright {

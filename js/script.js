@@ -1,3 +1,24 @@
+// Select all slides
+const slides = document.querySelectorAll('.slide');
+// Current slide index
+let currentSlide = 0;
+// Total number of slides
+const totalSlides = slides.length;
+
+// Function to change slide
+function changeSlide() {
+    // Remove active class from the current slide
+    slides[currentSlide].classList.remove('active');
+    // Update current slide index
+    currentSlide = (currentSlide + 1) % totalSlides;
+    // Add active class to the new current slide
+    slides[currentSlide].classList.add('active');
+}
+
+// Set interval for changing slides every 5 seconds
+setInterval(changeSlide, 5000);
+
+
 
 let currentIndex = 6;
 const images = [
